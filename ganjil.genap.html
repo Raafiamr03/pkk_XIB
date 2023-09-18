@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cek Ganjil dan Genap</title>
+</head>
+<body>
+    <h1>Cek Angka Ganjil dan Genap</h1>
+    <p>Masukkan angka dibawah ini:</p>
+    <input type="number" id="angkaInput">
+    <button onclick="cekGanjilGenap">Cek</button>
+    <p id="hasil"></p>
+
+    <script>
+        function cekGanjilGenap() {
+
+        }
+        var angka = document.getElementById("angkaInput");
+        angka = parseInt(angka);
+
+        if (isNaN(angka)){
+
+        } else{
+            if (angka % 2 == 0){
+                document.write(angka + " adalah bilangan genap");
+            } else {
+                document.write(angka + " adalah bilangan ganjil");
+            }
+        }
+        
+    </script>
+    
+</body>
+</html>
